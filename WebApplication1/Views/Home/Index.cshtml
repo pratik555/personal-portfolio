@@ -1,0 +1,12 @@
+﻿@model WebApplication1.ViewModel.HomeViewModel
+
+
+<h2>@ViewBag.Title</h2>
+
+@foreach (var pie in Model.Pies)
+{
+    <div>
+        <h2>@pie.Name</h2>
+        <h2>@pie.Price.ToString("c")</h2>
+    </div>
+}
